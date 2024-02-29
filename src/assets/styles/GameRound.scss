@@ -1,0 +1,149 @@
+@import "./Variables.scss";
+
+.game-round {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: $game-round-color;
+
+  &-your-choice,
+  &-computer-choice {
+    position: relative;
+    width: 25%;
+    height: 40vh;
+
+    h4 {
+      display: block;
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: auto;
+    }
+
+    &-your-choices,
+    &-computer-choices {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: auto;
+      height: auto;
+      margin: auto;
+    }
+  }
+
+  .your-btn-chosen,
+  .computer-btn-chosen {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    z-index: 1;
+
+    img {
+      width: 70px;
+    }
+  }
+
+  .win-circles,
+  .lose-circles {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    align-items: center;
+    border-radius: 9999px;
+    z-index: -1;
+    opacity: 0;
+    background-color: $win-lose-bg-color;
+
+    .circle-1 {
+      display: flex;
+      width: 155px;
+      height: 155px;
+      margin: 0 auto;
+      align-items: center;
+      border-radius: 9999px;
+      z-index: -1;
+      background-color: $circle-1-bg-color;
+    }
+
+    .circle-2 {
+      display: flex;
+      width: 110px;
+      height: 110px;
+      margin: 0 auto;
+      align-items: center;
+      border-radius: 9999px;
+      z-index: -1;
+      background-color: $circle-2-bg-color;
+    }
+  }
+
+  .button-paper {
+    border: 20px solid $paper-border-color;
+  }
+
+  .button-rock {
+    border: 20px solid $rock-border-color;
+  }
+
+  .button-scissors {
+    border: 20px solid $scissors-border-color;
+  }
+
+  .button-lizard {
+    border: 20px solid $lizard-border-color;
+  }
+
+  .button-spock {
+    border: 20px solid $spock-border-color;
+  }
+
+  .game-result {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    height: 110px;
+    margin: auto;
+    z-index: 1;
+
+    h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    button {
+      margin-top: 3%;
+      padding: 10px 20px;
+      border: 2px solid $game-round-color;
+      border-radius: 12px;
+      font-size: 1rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 300ms;
+      color: $game-round-button-color;
+      background-color: $game-round-color;
+
+      &:hover {
+        color: $game-round-color;
+        background-color: $game-round-button-color;
+      }
+    }
+  }
+}
