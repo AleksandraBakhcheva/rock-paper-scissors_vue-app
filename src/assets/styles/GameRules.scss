@@ -1,0 +1,36 @@
+@import "./Variables.scss";
+
+.rules-box {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 25%;
+  margin: 0 auto;
+  padding: 3%;
+  z-index: 10;
+  opacity: 0;
+  border-radius: 12px;
+  background-color: $rules-bg-color;
+
+  &-title {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+
+    img {
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+  }
+
+  &-rules {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
