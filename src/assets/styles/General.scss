@@ -1,0 +1,39 @@
+/* normalize.css */
+@import url(https://necolas.github.io/normalize.css/latest/normalize.css);
+
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+@import "./Variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  max-width: 144rem;
+
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: $general-bg-color;
+}
+
+#app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  flex: 1 1 auto;
+}
