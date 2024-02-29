@@ -2,10 +2,18 @@
 
 Rules: If the player wins, he receives 1 point. If the computer wins, the player loses 1 point. 
 
-### Original Game      
-- Paper beats Rock
-- Rock beats Scissors
-- Scissors beat Paper
+| Original Game         | Bonus Game           |
+| --------------------- | -------------------- |
+| Paper beats Rock      | Scissors beat Paper  |
+| Rock beats Scissors   | Paper beats Rock     |
+| Scissors beat Paper   | Rock beats Lizard    |
+|                       | Lizard beats Spock   | 
+|                       | Spock beats Scissors |
+|                       | Scissors beat Lizard |
+|                       | Paper beats Spock    |
+|                       | Rock beats Scissors  |
+|                       | Lizard beats Paper   |
+|                       | Spock beats Rock     |
 
 ## Stack
 
