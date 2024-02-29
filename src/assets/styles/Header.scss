@@ -1,0 +1,68 @@
+@import "./Variables.scss";
+
+header {
+  display: flex;
+  width: 45%;
+  margin: 2% auto;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  padding: 1% 1.5%;
+  border: $header-border;
+  border-radius: 15px;
+  line-height: 30px;
+
+  .header-logo {
+    display: block;
+    position: relative;
+    height: 100px;
+
+    img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      height: 100%;
+    }
+
+    .logo-bonus {
+      opacity: 0;
+    }
+  }
+
+  .header-score {
+    display: block;
+    position: relative;
+    width: 120px;
+    height: 100px;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    border-radius: 12px;
+    color: $header-score-color;
+    background-color: $header-score-bg-color;
+
+    &-text,
+    &-counter {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-counter {
+      height: 50px;
+      align-items: center;
+      font-size: 3rem;
+      color: $score-counter-color;
+    }
+
+    .bonus-score {
+      display: block;
+      position: absolute;
+      left: 46px;
+      bottom: 8px;
+      margin: 0 auto;
+      opacity: 0;
+    }
+  }
+}
