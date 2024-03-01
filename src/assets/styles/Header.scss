@@ -13,6 +13,10 @@ header {
   border-radius: 15px;
   line-height: 30px;
 
+  @media screen and (max-width: 800px) {
+    width: 90%;
+  }
+
   .header-logo {
     display: block;
     position: relative;

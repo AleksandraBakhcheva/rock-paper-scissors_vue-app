@@ -18,20 +18,19 @@ body {
 
 body {
   max-width: 144rem;
-
   margin: 0 auto;
   overflow: hidden;
-  background-color: $general-bg-color;
 }
 
 #app {
-  min-height: 100%;
   display: flex;
+  min-height: 100%;
   flex-direction: column;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $general-bg-color;
 }
 
 main {

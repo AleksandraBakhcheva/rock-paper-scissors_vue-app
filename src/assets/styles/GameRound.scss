@@ -9,6 +9,10 @@
   text-align: center;
   color: $game-round-color;
 
+  @media screen and (max-width: 1000px) {
+    justify-content: space-evenly;
+  }
+
   &-your-choice,
   &-computer-choice {
     position: relative;
@@ -21,6 +25,10 @@
       right: 0;
       left: 0;
       margin: auto;
+
+      @media screen and (max-width: 800px) {
+        display: flex;
+      }
     }
 
     &-your-choices,
@@ -48,8 +56,18 @@
     margin: auto;
     z-index: 1;
 
+    @media screen and (max-width: 800px) {
+      width: 60px;
+      height: 60px;
+    }
+
     img {
       width: 70px;
+
+      @media screen and (max-width: 800px) {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 
@@ -70,6 +88,11 @@
     opacity: 0;
     background-color: $win-lose-bg-color;
 
+    @media screen and (max-width: 1000px) {
+      width: 65px;
+      height: 65px;
+    }
+
     .circle-1 {
       display: flex;
       width: 155px;
@@ -79,6 +102,11 @@
       border-radius: 9999px;
       z-index: -1;
       background-color: $circle-1-bg-color;
+
+      @media screen and (max-width: 1000px) {
+        width: 55px;
+        height: 55px;
+      }
     }
 
     .circle-2 {
@@ -90,6 +118,11 @@
       border-radius: 9999px;
       z-index: -1;
       background-color: $circle-2-bg-color;
+
+      @media screen and (max-width: 1000px) {
+        width: 45px;
+        height: 45px;
+      }
     }
   }
 
@@ -114,13 +147,23 @@
   }
 
   .game-result {
+    display: flex;
     position: absolute;
     top: 0;
     bottom: 0;
     width: 15%;
     height: 110px;
     margin: auto;
+    justify-content: center;
     z-index: 1;
+
+    @media screen and (max-width: 1150px) {
+      display: flex;
+      top: 60%;
+      width: 50%;
+      height: 0;
+      margin: 0;
+    }
 
     h1 {
       font-size: 2rem;

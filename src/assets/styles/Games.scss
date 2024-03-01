@@ -13,6 +13,12 @@
   background-image: url("/src/assets/images/bg-triangle.svg");
   width: 300px;
   height: 300px;
+
+  @media screen and (max-width: 800px) {
+    width: 250px;
+    height: 250px;
+    margin-top: 30%;
+  }
 }
 
 .bonus-game {
@@ -20,6 +26,12 @@
   background-image: url("/src/assets/images/bg-pentagon.svg");
   width: 400px;
   height: 400px;
+
+  @media screen and (max-width: 800px) {
+    width: 250px;
+    height: 250px;
+    margin-top: 30%;
+  }
 }
 
 .button {
@@ -29,6 +41,11 @@
   cursor: pointer;
   background-color: $game-button-bg-color;
 
+  @media screen and (max-width: 800px) {
+    width: 60px;
+    height: 60px;
+  }
+
   img {
     position: absolute;
     top: 0;
@@ -36,6 +53,11 @@
     right: 0;
     bottom: 0;
     margin: auto;
+
+    @media screen and (max-width: 800px) {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
 
@@ -47,11 +69,20 @@
   border: 20px solid $paper-border-color;
   box-shadow: 0px 7px 2px $box-shadow-color inset,
     0px 7px 0px $paper-shadow-color;
+
+  @media screen and (max-width: 800px) {
+    top: -20%;
+    left: -10%;
+  }
 }
 
 .button-paper-bonus {
   top: 60px;
   left: 330px;
+
+  @media screen and (max-width: 800px) {
+    left: 75%;
+  }
 }
 
 .button-rock,
@@ -67,9 +98,14 @@
 }
 
 .button-rock-bonus {
-  bottom: -60px;
   left: 245px;
+  bottom: -60px;
   margin: 0px;
+
+  @media screen and (max-width: 800px) {
+    left: 60%;
+    bottom: -15%;
+  }
 }
 
 .button-scissors,
@@ -80,6 +116,11 @@
   border: 20px solid $scissors-border-color;
   box-shadow: 0px 7px 2px $box-shadow-color inset,
     0px 7px 0px $scissors-shadow-color;
+
+  @media screen and (max-width: 800px) {
+    top: -20%;
+    right: -10%;
+  }
 }
 
 .button-scissors-bonus {
@@ -87,6 +128,10 @@
   right: 0px;
   left: 0px;
   margin: auto;
+
+  @media screen and (max-width: 800px) {
+    top: -20%;
+  }
 }
 
 .button-lizard-bonus {
@@ -96,6 +141,10 @@
   border: 20px solid $lizard-border-color;
   box-shadow: 0px 7px 2px $box-shadow-color inset,
     0px 7px 0px $lizard-shadow-color;
+
+  @media screen and (max-width: 800px) {
+    bottom: -15%;
+  }
 }
 
 .button-spock-bonus {
@@ -105,4 +154,8 @@
   border: 20px solid $spock-border-color;
   box-shadow: 0px 7px 2px $box-shadow-color inset,
     0px 7px 0px $spock-shadow-color;
+
+  @media screen and (max-width: 800px) {
+    left: -16%;
+  }
 }

@@ -10,6 +10,13 @@ footer {
   align-items: flex-end;
   gap: 30px;
 
+  @media screen and (min-width: 2000px) {
+    position: static;
+    margin-bottom: 3%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   .footer-button {
     width: 120px;
     padding: 5px 0;

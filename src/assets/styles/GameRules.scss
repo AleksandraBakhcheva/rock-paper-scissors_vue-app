@@ -13,6 +13,10 @@
   border-radius: 12px;
   background-color: $rules-bg-color;
 
+  @media screen and (max-width: 800px) {
+    width: 70%;
+  }
+
   &-title {
     display: flex;
     margin-bottom: 30px;
