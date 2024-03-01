@@ -154,7 +154,6 @@ export default {
         this.youWin = false;
         this.youLose = true;
       }
-      console.log(this.youWin, this.youLose);
     },
 
     whoWinBonus(you, computer) {
