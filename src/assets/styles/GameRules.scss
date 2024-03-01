@@ -14,6 +14,7 @@
   background-color: $rules-bg-color;
 
   @media screen and (max-width: 800px) {
+    top: 130%;
     width: 70%;
   }
 
